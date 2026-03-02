@@ -191,6 +191,7 @@
     <source src="animated.mp4" type="video/mp4" />
   </video>
 
+  // --- 音效 (bgm.mp3=背景音樂、Collect.mp3=加分音效、Crunch.mp3=減分音效、end.mp3=完結音效) 更改需先上載音效到"檔案資料"，然後在此改名 ---
   <audio id="bgm" loop src="bgm.mp3"></audio>
   <audio id="sfx-collect" src="Collect.mp3"></audio>
   <audio id="sfx-crunch" src="Crunch.mp3"></audio>
@@ -198,8 +199,10 @@
 
   <video id="video" playsinline autoplay muted></video>
 
+  
   <div id="ui-layer">
     <div id="score-board">分數: <span id="score">0</span></div>
+    // --- 更改計時器時間 ---
     <div id="timer-board">時間: <span id="timer">60</span></div>
 
     <div id="dragon-body-container"></div>
@@ -211,6 +214,7 @@
     <div id="game-area"></div>
     <button id="mute-btn" title="Mute/unmute">🔊</button>
 
+    // --- 主頁名稱 ---
     <div id="start-screen" class="overlay-screen">
       <h1 style="color:#ffeb3b; text-shadow: 0 0 10px #ff5722; font-size: 38px; margin:0;">保良局陳溢小學</h1>
       <h1 style="color:#ffeb3b; text-shadow: 0 0 10px #ff5722; font-size: 38px; margin:0;">STEAM</h1>
@@ -250,7 +254,7 @@
     const ITEM_R = 40;  
     const CAM_MARGIN = 0.12; 
 
-    const bodySegmentCount = 4;
+    const bodySegmentCount = 6;
     const bodySpacing = 80;
 
     const video = document.getElementById('video');
